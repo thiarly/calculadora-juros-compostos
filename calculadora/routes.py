@@ -3,7 +3,7 @@ from calculadora import app
 
 
 
-@app.route('/calculadora', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def calculadora_juros_compostos():
     if request.method == 'POST':
         nome = request.form['nome']
