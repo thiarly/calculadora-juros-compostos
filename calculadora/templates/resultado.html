@@ -17,12 +17,18 @@
                 <p><span>Salário Desejado: <strong>{{ resultado.salario_desejado }}</strong></span></p>
             </div>
         {% endif %}
+
+        <!-- Botão de limpar tela -->
+        <div class="mt-6">
+            <a href="{{ url_for('calculadora_juros_compostos') }}" class="bg-blue-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
+                Limpar Tela
+            </a>
+        </div>
     </div>
 
     <!-- Coloque o seu footer aqui -->
-    <footer class="p-4 bg-blue-500 w-full">
+    <footer class="p-4 bg-blue-500 w-full mt-10">
         <!-- Conteúdo do footer -->
     </footer>
 </div>
 {% endblock %}
-
